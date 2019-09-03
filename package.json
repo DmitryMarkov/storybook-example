@@ -6,7 +6,8 @@
   "author": "DmitryMarkov <forall@stylive.com>",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook -p 6006 -c .storybook"
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "upgrade-dependencies": "yarn upgrade-interactive --latest --exact"
   },
   "devDependencies": {
     "@storybook/addon-info": "^3.4.11",
