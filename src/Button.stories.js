@@ -1,10 +1,19 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { text } from '@storybook/addon-knobs/react'
 import { Button } from './Button'
 
-storiesOf('Button', module).addWithJSX('with background', withInfo('description')(() => (
-  <Button bg='#d7d7d7'>{text('children', 'Hello')}</Button>
-  )),
-  { skip: 1 })
+storiesOf('Button', module)
+  .addParameters({
+    info: { inline: true, header: false },
+  })
+  .add('with text', () => (
+    <Button bg="#d7d7d7">{text('children', 'Hello Button')}</Button>
+  ))
+  .add('with emoji', () => (
+    <Button>
+      <span role="img" aria-label="so cool">
+        😀 😎 👍 💯
+      </span>
+    </Button>
+  ))
