@@ -10,7 +10,7 @@ storiesOf('Button', module)
   .add('with text', () => (
     <Button bg="#d7d7d7">{text('children', 'Hello Button')}</Button>
   ))
-  .add('with emoji', () => (
+  .addWithJSX('with emoji', () => (
     <Button>
       <span role="img" aria-label="so cool">
         😀 😎 👍 💯
