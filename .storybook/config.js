@@ -11,20 +11,13 @@ import centered from '@storybook/addon-centered/react'
 
 addParameters({
   options: {
-    isToolshown: false,
+    isToolshown: true,
     panelPosition: 'right',
   },
 })
 addDecorator(withInfo)
 addDecorator(withKnobs)
-addDecorator(centered)
+// addDecorator(centered)
 setAddon(JSXAddon)
 
-const req = require.context('../src', true, /.stories.js$/)
-
-function loadStories() {
-  require('./welcomeStory')
-  req.keys().forEach(file => req(file))
-}
-
-configure(loadStories, module)
+configure(require.context('../src', true, /\.stories\.(js|mdx)$/), module)
