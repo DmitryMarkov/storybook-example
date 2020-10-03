@@ -1,5 +1,5 @@
-import React from 'react'
-import { text, color } from '@storybook/addon-knobs/react'
+import * as React from 'react'
+import { withKnobs, text, color } from '@storybook/addon-knobs'
 import { Button } from './Button'
 
 const label = 'bg'
@@ -11,6 +11,7 @@ export default {
   parameters: {
     componentSubtitle: 'Just a test',
   },
+  decorators: [withKnobs],
 }
 
 export const story1 = () => (
@@ -18,7 +19,7 @@ export const story1 = () => (
     {text('children', 'Hello Button')}
   </Button>
 )
-story1.story = { name: 'default' }
+story1.story = { name: 'default', parameters: { layout: 'centered' } }
 
 export const story2 = () => (
   <Button>

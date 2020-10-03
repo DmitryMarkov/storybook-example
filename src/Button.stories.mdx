@@ -1,5 +1,5 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import { text } from '@storybook/addon-knobs/react'
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { text } from '@storybook/addon-knobs'
 import { Button } from './Button';
 
 <Meta title="MDX|Button" component={Button} />
@@ -9,7 +9,7 @@ import { Button } from './Button';
 With `MDX` we can define a story for `Button` right in the middle of our
 markdown documentation.
 
-<Preview>
+<Canvas>
   <Story name="all buttons">
       <Button bg="#d7d7d7">{text('children', 'Hello Button')}</Button>
       <Button>
@@ -25,4 +25,4 @@ markdown documentation.
           </span>
         </Button>
   </Story>
-</Preview>
+</Canvas>
