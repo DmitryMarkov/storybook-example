@@ -2,7 +2,7 @@
 
 ### DOCS
 
-DoscPage
+DocsPage
 https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/docspage.md
 
 MDX Doc preview
