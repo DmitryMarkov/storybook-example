@@ -14,13 +14,10 @@
   },
   "resolutions": {
     "braces": ">=2.3.1",
-    "lodash": ">=4.17.15",
-    "lodash.template": ">=4.5.0",
-    "kind-of": ">=6.0.3",
-    "marked": ">=0.7.0",
+    "dot-prop": ">=4.2.1",
     "minimist": ">=1.2.3",
-    "set-value": ">=2.0.1",
-    "serialize-javascript": ">=2.1.1"
+    "node-fetch": ">=2.6.1",
+    "set-value": ">=2.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
